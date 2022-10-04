@@ -1,0 +1,311 @@
+	<head>
+		<title>Spotify- music player</title>
+		
+		<style>
+			
+		
+		 body {
+			margin:0;
+			padding:0;
+			background-color:green;
+		 }
+		 
+		 .navbar1{
+			display:flex;
+			list-style:none;
+			background-color:black;
+			color:white;
+			
+		 }
+		 
+		 .navbar1 ul li{
+			padding:0 12px;
+		 }
+		  
+		 
+		 .navbar1 li{
+		  	display:flex;
+			list-style:none;
+			color:white;
+			float:left;
+			padding:0 23px;
+			font-size:20px;
+			align-items:center;
+			 font-family:'Varela Round', sans-serif;
+		 }
+		 
+		 .brand{
+			display:flex;
+			align-items:center;
+			font-weight:bolder;
+			font-size:1.3rem;
+		 }
+		 
+		.brand img{
+		  width:43px;
+		}
+		
+		.container{
+		 min-height:60vh;
+		 font-family:'Comic Sans MS';
+		background-color:black;
+		color:white;
+		display:flex;
+		margin:23px auto;
+		width:70%;
+		border-radius:13px;
+		padding:24px;
+		background-image:url( https://lh3.googleusercontent.com/proxy/Xd5GrF6w_2aW6rm4zKj24xhifyQVj_-eErYdXEHNK0qscpriB5WAACqKbAUpAOLgpRhekAXlXvfB0KadE3A9WauBmf9d1V3QG9YkclUqqadH88Xa14R1xE2FNZH--1STkgs097y4OSD0gw=w1200-h630-p-k-no-nu );
+		background-repeat:no-repeat;
+		background-position:right;
+		background-size: 500px 520px;
+		
+		 
+		}
+		
+		
+		.bottom{
+			position:sticky;
+			background-color:black;
+			height:100px;
+			bottom:0;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			 flex-direction:column;
+			 
+			 
+		}
+		.icons{
+			margin-top:15px;
+			color:white;
+		}
+		.icons i{
+			cursor:pointer;
+		}
+		
+		
+		#MyProgressBar{
+			width:80vw;
+			cursor:pointer;
+			
+		}
+		
+		.songItem{
+			background-color:white;
+			color:black;
+			height:50px;
+			margin:12px 0;
+			justify-content:space-between;
+			align-items:center;
+			border-radius:30px;
+		}
+		
+		.songItemContainer{
+			margin-top:34px;
+		}
+		 
+		.songItem img{
+			width:60px;
+			border-radius:22px;
+			margin:1px 60px;
+			
+		}
+		
+		.timestamp{
+			margin:0 23px;
+			cursor:pointer;
+		}
+		
+		.songinfo{
+			position:absolute;
+			left:10vw;
+		}
+		.songinfo img{
+			opacity:0;
+			transition:opacity 0.4s ease;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		</style>
+	</head>
+	<body>
+		
+		<nav class="navbar1">
+			<ul>
+			<li class="brand"><img src=" https://images.idgesg.net/images/article/2018/11/spotify-logo-100779042-large.3x2.jpg" alt="Spotify">Spotify</li>
+				<li>Home</li>
+				<li>About</li>
+			</ul>
+
+			
+		</nav>
+		
+		<div class="container">
+			 
+			
+		       <div class="songList">
+			   <h2>Best of NCS - No Copyright Sounds</h2>
+			   
+		    <div class="songItemContainer">
+				<div class="songItem">
+					<img src="https://www.bing.com/th?id=OVP.EMOU75qVyOF7vAfYkVTmJAHgFo&w=606&h=340&c=7&rs=2&qlt=90&o=6&dpr=1.25&pid=1.7" alt="headlights">
+					<span class="songName">HeadLights</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+				
+				<div>
+				<div class="songItem">
+					<img src="https://th.bing.com/th/id/OIP.GDDiPnpUTLU9VQxr9_L9BgHaEK?w=308&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="headlights">
+					<span class="songName">Alone</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+				
+				<div>
+				<div class="songItem">
+					<img src="https://th.bing.com/th/id/OIP.ocfjc0REB696Gt0dROeZUgHaEK?w=307&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="headlights">
+					<span class="songName">Darkside</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+				
+				<div>
+				<div class="songItem">
+					<img src="https://th.bing.com/th/id/OIP.UHZiO2oUm9Z77Vv4JQGCAgHaEK?w=318&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="headlights">
+					<span class="songName">Ignite</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+				
+				<div>
+				<div class="songItem">
+					<img src="https://th.bing.com/th/id/OIP.wVmUaQq5r8JWq2PiT8RC9AHaEK?w=275&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt="headlights">
+					<span class="songName">Faded</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+				
+				<div>
+				<div class="songItem">
+					<img src="https://i.ytimg.com/vi/_7W6TbMVMGY/maxresdefault.jpg" alt="headlights">
+					<span class="songName">Heartattack</span>
+					<span class="songlistplay"><span class="timestamp">5:34  <span class="timestamp"><i class="fa-regular fa-circle-play"></i></span>
+			    </div>
+				</div>
+			</div>
+			<div class="song-banner"></div>
+		
+		</div>
+		<div>
+			<h4>Enjoy your favorite PlayList...</h4>
+		</div>
+		
+		<div class="bottom">
+			<input type="range" name="range" id="MyProgressBar" min="0" value="0" max="100">
+			
+			<!--icons-->
+			<div class="icons"> 
+				<i class="fa-solid fa-2x fa-backward"></i>
+				<i class="fa-regular fa-2x fa-circle-play" id="masterPLay"></i>
+				<i class="fa-solid fa-2x fa-forward"></i>
+
+                
+			</div>
+			
+			<div class="songinfo"> 
+			<img src="https://thumbs.gfycat.com/HeftyEarlyAegeancat-max-1mb.gif" width="45px" alt="" id="gif">
+			
+			</div>
+		
+		</div>
+		  
+		 
+	
+	
+	<script src="https://kit.fontawesome.com/44bba8d3ee.js" crossorigin="anonymous"></script>
+
+	<script> 
+		console.log("Spotify Here");
+		
+		//initialistion the variables
+		
+		let songIndex = 0;
+		let audioElement = new Audio('1.mp3');
+		let masterPLay = document.getElementById('masterPLay');
+		let MyProgressBar = document.getElementById('MyProgressBar');
+		let gif = document.getElementById('gif');
+		
+		
+		
+		let songs = [
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\1.mp3"},
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\2.mp3"},
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\3.mp3"},
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\4.mp3"},
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\5.mp3"},
+			{songName: "Alan walker", filePath:"C:\Users\AnasA\AppData\Local\Temp\Temp1_Spotify Clone.zip\songs\6.mp3"},
+			
+			
+			 
+			
+			
+			 
+		]
+	
+		//audioElement.play()
+		
+		
+		
+		//event on play/pause
+		
+		masterPLay.addEventListener('click', ()=>{
+			if(audioElement.paused || audioElement.currentTime<=0){
+				audioElement.play();
+				masterPLay.classList.remove('fa-circle-play');
+				masterPLay.classList.add('fa-circle-pause');
+				gif.style.opacity = 1;
+			} else{
+				audioElement.pause();
+				audioElement.classList.remove('fa-circle-pause');
+				audioElement.classList.add('fa-circle-play');
+				gif.style.opacity = 0;
+			}
+		
+		})
+
+
+		
+		//event on range
+		
+		audioElement.addEventListener('timeupdate', ()=>{
+			console.log('timeupdate');
+		
+		//update seekbar
+			
+			progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+			console.log(progress);
+			MyProgressBar.value = progress;
+		
+		
+		})
+		
+		MyProgressBar.addEventListener('change', ()=>{
+			audioElement.currentTime = MyProgressBar.value * audioElement.duration/100;
+		
+		})
+		
+		
+		 	
+	</script>
+	
+	</body>
+
+</html>
